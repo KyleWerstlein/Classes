@@ -1,15 +1,18 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 class Media {
  public:
-  char getTitle;
+  vector<char> getTitle();
+  void setTitle(vector<char> newtitle);
   int getYear();
+  void setYear(int newyear);
   int getType();
-  int setType(int newtype);
+  void setType(int newtype);
  private:
   int mediaType;
   int year;
-  char title[50];
+  vector<char> title;
 };
